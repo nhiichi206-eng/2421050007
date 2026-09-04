@@ -1,0 +1,24 @@
+#tieude-1{
+    color: red;
+    background-color: yellow;
+}
+
+.tieude-2{
+    color: green;
+    background-color: lightgray;
+}
+
+div.Web4{
+    color: red;
+    background-color: blue;
+}
+
+/* div{
+    margin:20px; /* Khoảng cách từ viền ngoài của div đến các phần tử xung quanh */
+    width:300px;
+    height:200px;
+    padding:50px; /* Khoảng cách từ nội dung đến viền */
+    border:15px solid green; /* Độ dày và màu sắc của viền */
+    background-color: lightgray; /* Màu nền của div */
+    display:inline-block; /* Hiển thị div theo dạng khối nhưng vẫn cho phép các phần tử khác nằm cạnh */
+} */
