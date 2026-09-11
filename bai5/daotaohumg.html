@@ -6,16 +6,21 @@
     <title>Dao tao HUMG</title>
     <style>
         body{
-            
+            margin: 0px;
         }
         .menu{
-            background-color: blue;
+            background-color: #2fa4e7;
         }
         .danh-sach-muc{
             /*bỏ dấu chấm của list*/
             list-style: none;
-            margin:auto;
+            /* margin: xét khoảng cách giữa nhau */
+            margin: 0;
             display: flex;
+            /* padding: khoảng cách bên trong */
+            padding: 10px;
+            /* set các đối tượng bọc ở trong khối tự động cách nhau khoảng cách = giá trị truyền vào */
+            gap: 15px;
         }
         .muc{
             color:white;
@@ -32,24 +37,131 @@
             display: flex;
         }
         .khoi-trai{
+            /* width: chiều rộng . Ở đây chiếm 20%*/
             width: 20%;
-            height:500px;
+            /* height: chiều cao */
+            height: 500px;
+            /* để vẽ viền dùng border
+            border sẽ có 3 tham số(độ dày - loại đường viền - màu sắc) */
+            border-right: 1px solid #2fa4e7;
         }
-        .khoi-phai{
-            background-color: green;
-            width: 80%;
-            height:500px;
+        input{
+            width: 100%;
+            padding: 5px 0;
+            /* border-radius: bo tròn góc */
+            border-radius: 5px;
+            border: 2px solid gray;
         }
-        .dang-nhap{
-            background-color: gray;
+        .khoi-dang-nhap{
+            /* background-color: gray; */
+            width: 90%;
             height: 200px;
-            display:flex;
+            /* nếu margin để auto sẽ căn đối tượng ra giữa */
+            margin: 10px auto;
+            display: flex;
             justify-content: center;
         }
         p{
-            margin:0;
+            margin: 0px;
+        }
+        .quen-mk{
+            display:flex;
+            justify-content: flex-end;
+        }
+        .lien-ket-quen-mk{
+            text-decoration: none;
+            color: #2fa4e7;
+        }
+        .thong-tin{
+            margin-bottom: 10px;
+        }
+        button{
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            color: white;
+        }
+        .dang-nhap{
+            background-color: #2fa4e7;
+        }
+        .dang-nhap-365{
+            background-color: #0078D4;
         }
 
+        .khoi-phai{
+            /* background-color: green; */
+            width: 80%;
+            height: 500px;
+        }
+        .tin{
+            width: 95%;
+            height: 300px;
+            margin: 20px auto;
+            border: 1px solid #2fa4e7;
+            border-radius: 10px;
+        }
+        .tin-tren{
+            width: 95%;
+            margin: auto;
+            border-bottom: 1px solid #2fa4e7;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        h3{
+            margin: 0;
+        }
+        .xem-tiep{
+            color: #2fa4e7;
+            text-decoration: none;
+        }
+        .danh-sach-tin{
+            width: 95%;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+        }
+        .bai-viet{
+            width: 25%;
+            margin-right: 20px;
+        }
+        .bai-viet-khoi-anh{
+            width: 100%;
+        }
+        .bai-viet-thoi-gian{
+            display: flex;
+            justify-content: flex-end;
+        }
+        img{
+            width: 100%;
+            height: 20vh;
+            border-radius: 10px;
+        }
+        .xem-tiep{
+            color: #2fa4e7;
+            text-decoration: none;
+        }
+        .danh-sach-thong-bao{
+            width: 95%;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+        }
+        .thong-bao{
+            width: 25%;
+            margin-right: 20px;
+        }
+        .chu{
+            width: 50%;
+        }
+        .thong-bao-chu{
+            margin: auto;
+            border-bottom: 1px solid #2fa4e7;
+            display: flex;
+        }
+        
     </style>
 </head>
 <body>
@@ -65,17 +177,136 @@
     <!-- Nội dung chính -->
      <main>
         <div class="khoi-trai">
-            <div class="dang-nhap">
-                <form action>
-                    <p>Tài khoản:</p>
-                    <input type="text">
-                    <p>Mật khẩu:</p>
-                    <input type="password">
+            <div class="khoi-dang-nhap">
+                <form action="">
+                    <div class="thong-tin">
+                        <p>Tài khoản</p>
+                        <input type="text">
+                    </div>
+                    <div class="thong-tin">
+                        <p>Mật khẩu</p>
+                        <input type="password">
+                    </div>
+                    <div class="quen-mk">
+                        <i>
+                            <a class="lien-ket-quen-mk" href="#">Quên mật khẩu?</a>
+                        </i>
+                    </div>
+                    <div class="chuc-nang-dang-nhap">
+                        <button class="dang-nhap">Đăng nhập</button>
+                        <button class="dang-nhap-365">Đăng nhập với Microsoft office 365</button>
+                    </div>                
                 </form>
             </div>
         </div>
-        <div class="khoi-phai">Phải</div>
-     </main>
-    
+        <!-- Bắt đầu khối trái -->
+        <div class="khoi-phai">
+            <!-- Tin tức -->
+            <div class="tin">
+                <!-- Tin trên -->
+                <div class="tin-tren">
+                    <h3 class="tieu-de">Tin tức</h3>
+                    <p>
+                        <a class="xem-tiep" href="#">Xem tiếp ></a>
+                    </p>
+                </div>
+                <!-- Danh sách tin -->
+                 <div class="danh-sach-tin">
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>05/05/2026</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                        </div>
+                    </div>
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>15/04/2026</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Về việc nghỉ học</p>
+                        </div>
+                    </div>
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>24/09/2024</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Trường Đại học Mỏ - Địa Chất đạt chất lượng giáo dục tiêu chuẩn Quốc gia 2018-2029</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Thông báo -->
+            <div class="tin">
+                <div class="tin-tren">
+                    <h3 class="tieu-de">Thông báo</h3>
+                    <p>
+                        <a class="xem-tiep" href="#">Xem tiếp ></a>
+                    </p>
+                </div>
+                <!-- Danh sách thông báo -->
+                <div class="danh-sach-thong-bao">
+                     <div class="thong-bao">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>27/08/2026</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Về việc ghép lớp và mở lớp kì 1 năm học 2026-2027</p>
+                        </div>
+                    </div>
+                    <div class="thong-bao">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>24/08/2026</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Thông báo về việc nghỉ học nhân dịp Quốc Khánh 2/9</p>
+                        </div>
+                    </div>
+                    <div class="chu">
+                        <div class="thong-bao-chu">
+                            <p>Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</p>
+                            <p>11/08/2026</p>
+                        </div>
+                        <div class="thong-bao-chu">
+                            <P>Về việc đăng ký khối lượng học tập học kỳ 1 2026-2027</P>
+                            <p>20/07/2026</p>
+                        </div>
+                        <div class="thong-bao-chu">
+                            <p>Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026(Tháng7/2026)</p>
+                            <p>16/07/2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hướng dẫn -->
+            <div class="tin-tren">
+                <h3 class="tieu-de">Hướng dẫn</h3>
+                <p>
+                    <a class="xem-tiep" href="#">Xem tiếp ></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Kết thúc khối trái -->
+                
+    </main>
+
 </body>
 </html>
