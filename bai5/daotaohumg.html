@@ -40,8 +40,8 @@
             /* width: chiều rộng . Ở đây chiếm 20%*/
             width: 20%;
             /* height: chiều cao */
-            height: 500px;
-            /* để vẽ viền dùng border
+            height: 1000px;
+            /* để vẽ viền ngăn cách khối trái vs khối phải dùng border
             border sẽ có 3 tham số(độ dày - loại đường viền - màu sắc) */
             border-right: 1px solid #2fa4e7;
         }
@@ -93,7 +93,7 @@
         .khoi-phai{
             /* background-color: green; */
             width: 80%;
-            height: 500px;
+            height: 1000px;
         }
         .tin{
             width: 95%;
@@ -155,11 +155,24 @@
         }
         .chu{
             width: 50%;
+            
         }
         .thong-bao-chu{
             margin: auto;
-            border-bottom: 1px solid #2fa4e7;
+            border-bottom: 1px solid gray;
             display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .danh-sach-huong-dan{
+            width: 95%;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+        }
+        .huong-dan{
+            width: 25%;
+            margin-right: 20px;
         }
         
     </style>
@@ -259,7 +272,7 @@
                 <div class="danh-sach-thong-bao">
                      <div class="thong-bao">
                         <div class="bai-viet-khoi-anh">
-                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                            <img src="../anh/tải xuống.webp" alt="">
                         </div>
                         <div class="bai-viet-thoi-gian">
                             <p>27/08/2026</p>
@@ -270,7 +283,7 @@
                     </div>
                     <div class="thong-bao">
                         <div class="bai-viet-khoi-anh">
-                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                            <img src="../anh/tải xuống.jpg" alt="">
                         </div>
                         <div class="bai-viet-thoi-gian">
                             <p>24/08/2026</p>
@@ -296,17 +309,55 @@
                 </div>
             </div>
             <!-- Hướng dẫn -->
-            <div class="tin-tren">
+            <div class="tin">
+                <div class="tin-tren">
                 <h3 class="tieu-de">Hướng dẫn</h3>
                 <p>
                     <a class="xem-tiep" href="#">Xem tiếp ></a>
                 </p>
             </div>
+            <!-- Danh sách hướng dẫn -->
+                <div class="danh-sach-huong-dan">
+                     <div class="huong-dan">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>18/11/2025</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Hướng dẫn đăng ký khối lượng học tập tại trang Web</p>
+                        </div>
+                    </div>
+                    <div class="huong-dan">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../anh/anh-khong-ton-tai.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>01/08/2023</p>
+                        </div>
+                        <div class="bai-viet-noi-dung">
+                            <p>Hướng dẫn lấy lại mật khẩu trang</p>
+                        </div>
+                    </div>
+                    <div class="chu">
+                        <div class="thong-bao-chu">
+                            <p>Hướng dẫn lấy lại mật khẩu E-mail Humg</p>
+                            <p>01/08/2023</p>
+                        </div>
+                        <div class="thong-bao-chu">
+                            <p>Hướng dẫn đăng ký khối lượng học tập tại trang web daotaodaihoc.humg.edu.vn</p>
+                            <p>19/12/2024</p>
+                        </div>
+                        <div class="thong-bao-chu">
+                            <p>Hướng dẫn kiểm tra, tra cứu trực tuyến thông tin về bằng tốt nghiệp tại trường Đại học Mỏ-Địa Chất</p>
+                            <p>11/05/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
-    </div>
-    <!-- Kết thúc khối trái -->
-                
-    </main>
-
+     <!-- Kết thúc khối trái -->
+     </main>
 </body>
 </html>
