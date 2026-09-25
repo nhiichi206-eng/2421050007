@@ -12,6 +12,18 @@ header{
     list-style: none;
     display: flex;
 }
-main{
+.danh-sach{
+    background-color:aqua;
+    height: 50px;
     
+}
+.danh-sach-kenh{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+.kenh{
+    width: 10%;
+    padding: 20px 10px;
+    background-color:blue;
 }

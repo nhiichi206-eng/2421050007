@@ -1,0 +1,99 @@
+body{
+    padding: 25px;
+}
+.thoi-khoa-bieu{
+    width: 100%;
+    border-radius: 10px;
+    height:1200px;
+    border: 1px solid #2fa4d7;
+    margin: auto;
+    padding: 20px;
+}
+.tieu-de{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #2fa4d7;
+}
+.khoi-trai{
+    width: 50%
+}
+.thanh-cong-cu{
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+}
+.nhom-1{
+    gap: 15px;
+    display: flex;
+    width: 100%;
+}
+select{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+.nhom-2{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    width: 200%;
+    gap: 20px;
+}
+.khoi-phai{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    width:100%;
+}
+.nut-in{
+    background-color: white;
+    border: 2px solid #2fa4d7;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color:#2fa4d7;
+}
+.muc-chu-thich{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+    font-size: 18px; 
+}
+.tim{
+    width: 30px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 20%;
+}
+.vang{
+    width: 30px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 20%;
+}
+table{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.tiet{
+    background-color:#2fa4d7;
+    color: white;
+    width: 70px;
+}
+.gio{
+    background-color:#2fa4d7;
+    color: white;
+    width: 70px;
+}
+.trong{
+    height: 70px;
+}
+.mon-hoc{
+    background-color:#94d1ec;
+    border: 2px solid #2fa4d7;
+
+}

@@ -71,16 +71,27 @@ header{
     margin: 10px auto;
 }
 .danh-sach-nhan-vat{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .nv{
+    gap: 20px;
     width: 19%;
-    height: 20vh;
     /* background-color: blue; */
     img{
     width: 100%;
-    border-radius: 50px;
+    border-radius: 50%;
     }
 }
+.thong-tin{
+    color:#BCBBBF;
+}
+.danh-sach-thong-tin{
+    margin: 20px auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
 

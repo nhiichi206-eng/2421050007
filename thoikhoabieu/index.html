@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời khóa biểu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="thoi-khoa-bieu">
+        <!-- Tiêu đề -->
+        <div class="tieu-de">THỜI KHÓA BIỂU DẠNG TUẦN</div>
+        <div class="khoi-trai">
+            <div class="thanh-cong-cu">
+                <!-- Học kỳ và thời khóa biểu -->
+                <div class="nhom-1">
+                    <select>
+                        <option value="Học kỳ 1 - Năm học 2026-2027">Học kỳ 1 - Năm học 2026-2027</option>
+                        <option value="Học kỳ 3 - Năm học 2025-2026">Học kỳ 3 - Năm học 2026-2027</option>
+                        <option value="Học kỳ 2 - Năm học 2025-2026">Học kỳ 2 - Năm học 2026-2027</option>
+                        <option value="Học kỳ 1 - Năm học 2026-2027">Học kỳ 1 - Năm học 2026-2027</option>
+                        <option value="Học kỳ 3 - Năm học 2026-2027">Học kỳ 3 - Năm học 2026-2027</option>
+                        <option value="Học kỳ 2 - Năm học 2026-2027">Học kỳ 2 - Năm học 2026-2027</option>
+                        <option value="Học kỳ 1 - Năm học 2026-2027">Học kỳ 1 - Năm học 2026-2027</option>
+                    </select>
+                    <select>
+                        <option value="Thời khóa biểu cá nhân">Thời khóa biểu cá nhân</option>
+                        <option value="Thời khóa biểu lớp sinh viên">Thời khóa biểu lớp sinh viên</option>
+                        <option value="Thời khóa biểu lớp">Thời khóa biểu lớp</option>
+                        <option value="Thời khóa biểu môn học">Thời khóa biểu môn học</option>
+                        <option value="Thời khóa biểu khoa quản lý sinh viên">Thời khóa biểu quản lý sinh viên</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Tuần -->
+            <div class="nhom-2">
+                <select>
+                    <option value="Tuần 1 [từ ngày 03/08/2026 đến ngày 09/08/2026">Tuần 1 [từ ngày 03/08/2026 đến ngày 09/08/2026</option>
+                    <option value="Tuần 2 [từ ngày 10/08/2026 đến ngày 16/08/2026">Tuần 2 [từ ngày 10/08/2026 đến ngày 16/08/2026</option>
+                    <option value="Tuần 3 [từ ngày 17/08/2026 đến ngày 23/08/2026">Tuần 3 [từ ngày 17/08/2026 đến ngày 23/08/2026</option>
+                    <option value="Tuần 4 [từ ngày 24/08/2026 đến ngày 30/08/2026">Tuần 4 [từ ngày 24/08/2026 đến ngày 30/08/2026</option>
+                    <option value="Tuần 5 [từ ngày 31/08/2026 đến ngày 06/09/2026">Tuần 5 [từ ngày 31/08/2026 đến ngày 06/09/2026</option>                    <option value="Tuần 6 [từ ngày 07/09/2026 đến ngày 13/09/2026">Tuần 6 [từ ngày 07/09/2026 đến ngày 13/09/2026</option>
+                </select>
+                <div class="khoi-phai">
+                    <button class="nut-in">In</button>
+                    <input type="checkbox" value="thoikhoabieutoi"><b>Thời khóa biểu tối</b>
+                    <div class="muc-chu-thich">
+                        <div class="tim"></div>
+                        <span>Dạy bù</span>
+                    </div>
+                    <div class="muc-chu-thich">
+                        <div class="vang"></div>
+                        <span>Trùng lịch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Thời khóa biểu -->
+        <div>
+            <table border="1">
+                <!-- Hàng 1 -->
+                <tr>
+                    <th>-></th>
+                    <th>Thứ 2 (21/09)</th>
+                    <th>Thứ 3 (22/09)</th>
+                    <th>Thứ 4 (23/09)</th>
+                    <th>Thứ 5 (24/09)</th>
+                    <th>Thứ 6 (25/09)</th>
+                    <th>Thứ 7 (26/09)</th>
+                    <th>Chủ Nhật (27/09)</th>
+                    <th><-</th>
+                </tr>
+                <!--Tiết 1 -->
+                <tr>
+                    <td class="tiet">Tiết 1</td>
+                    <!-- Thứ 2 k có tiết -->
+                    <td class="trong"></td>
+                    <!-- Thứ 3: Kho dữ liệu học 3 tiết-->
+                    <td class="mon-hoc" rowspan="3">
+                        <b>Kho dữ liệu</b><br> (7080214)<br>
+                        Nhóm: 01<br>
+                        Phòng: HNBG306-Giảng đương 306 khu B<br>
+                        GV: Dương Thị Tâm<br>
+                        06:45 -> 09:35
+                    </td>
+                    <!-- Thứ 4 k học -->
+                     <td class="trong"></td>
+                    <!-- Thứ 5: Thương mại điện tử học 3 tiết -->
+                    <td class="mon-hoc" rowspan="3">
+                        <b>Thương mại điện tử</b><br> (7080626)<br>
+                        Nhóm: 200<br>
+                        Phòng: HNA1-403-A1-403<br>
+                        GV: Nguyễn Thế Bình<br>
+                        06:45 -> 09:35
+                    </td>
+                    <!-- Thứ 6: Mã nguồn mở học 2 tiết -->
+                    <td class="mon-hoc" rowspan="2">
+                        <b>Mã nguồn mở</b><br> (7080111)<br>
+                        Nhóm: 01<br>
+                        Phòng: HNA1-502-A1-502<br>
+                        GV: Ngô Hùng Long<br>
+                        06:45 -> 08:35
+                    </td>
+                    <!-- Thứ 7 k học -->
+                    <td class="trong"></td>
+                    <!-- CN k học -->
+                    <td class="trong"></td>
+                    <!-- Giờ -->
+                    <td class="gio">06:45</td>
+                </tr>
+                <!-- Tiết 2 -->
+                <tr>
+                    <td class="tiet">Tiết 2</td>
+                    <!-- Thứ 2 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 4 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 7 -->
+                    <td class="trong"></td>
+                    <!-- CN -->
+                    <td class="trong"></td>
+                    <td class="gio">07:45</td>
+                </tr>
+                <!-- Tiết 3 -->
+                <tr>
+                    <td class="tiet">Tiết 3</td>
+                    <!-- Thứ 2 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 4 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 6 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 7 -->
+                    <td class="trong"></td>
+                    <!-- CN -->
+                    <td class="trong"></td>
+                    <td class="gio">08:45</td>
+                </tr>
+                <!-- Tiết 4 -->
+                <tr>
+                    <td class="tiet">Tiết 4</td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="gio">09:45</td>
+                </tr>
+                <!-- Tiết 5 -->
+                <tr>
+                    <td class="tiet">Tiết 5</td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="gio">10:45</td>
+                </tr>
+                <!-- Tiết 6 -->
+                <tr>
+                    <td class="tiet">Tiết 6</td>
+                    <td class="trong"></td>
+                    <!-- Thứ 3: Mã nguồn mở học 2 tiết -->
+                    <td class="mon-hoc" rowspan="2">
+                        <b>Mã nguồn mở</b><br> (7080111)<br>
+                        Nhóm: 01<br>
+                        Phòng: HNBG102-Giảng đường 102 khu B<br>
+                        GV: Ngô Hùng Long<br>
+                        12:30 -> 14:20
+                    </td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="gio">12:30</td>
+                </tr>
+                <!-- Tiết 7 -->
+                <tr>
+                    <td class="tiet">Tiết 7</td>
+                    <!-- Thứ 2 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 4 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 5 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 6 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 7 -->
+                    <td class="trong"></td>
+                    <!-- CN -->
+                    <td class="trong"></td>
+                    <td class="gio">13:30</td>
+                </tr>
+                <!-- Tiết 8 -->
+                <tr>
+                    <td class="tiet">Tiết 8</td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="gio">14:30</td>
+                </tr>
+                <!-- Tiết 9 -->
+                <tr>
+                    <td class="tiet">Tiết 9</td>
+                    <!-- Thứ 2: Cơ sở an ninh mạng học 3 tiết -->
+                    <td class="mon-hoc" rowspan="3">
+                        <b>Cơ sở an ninh mạng</b><br> (7080703)<br>
+                        Nhóm: 01<br>
+                        Phòng: HNBG603-GIảng đường 603 khu B<br>
+                        GV: Đỗ Như Hải<br>
+                        15:30 -> 18:20
+                    </td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="gio">15:30</td>
+                </tr>
+                <!-- Tiết 10 -->
+                <tr>
+                    <td class="tiet">Tiết 10</td>
+                    <!-- Thứ 3 -->
+                    <td class="trong"></td>
+                    <!-- THứ 4 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 5 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 6: Phát triển ứng dụng Web + BTL -->
+                    <td class="mon-hoc" rowspan="2">
+                        <b>Phát triển ứng dụng Web + BTL</b><br> (7080116)<br>
+                        Nhóm: 04<br>
+                        Phòng: HNAD402-D4-2<br>
+                        GV: Ngô Ngọc Anh<br>
+                        16:30 -> 18:20 
+                    </td>
+                    <!-- Thứ 7 -->
+                    <td class="trong"></td>
+                    <!-- CN -->
+                    <td class="trong"></td>
+                    <td class="gio">16:30</td>
+                </tr>
+                <!-- Tiết 11 -->
+                <tr>
+                    <td class="tiet">Tiết 11</td>
+                    <!-- Thứ 3 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 4 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 5 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 7 -->
+                    <td class="trong"></td>
+                    <!-- CN -->
+                    <td class="trong"></td>
+                    <td class="gio">17:30</td>
+                </tr>
+                <!-- Tiết 12 -->
+                <tr>
+                    <td class="tiet">Tiết 12</td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="mon-hoc" rowspan="2">
+                        <b>Phát triển ứng dụng Web + BTL</b><br> (7080116)<br>
+                        Nhóm: 04<br>
+                        Phòng: HNAD402-D4-2<br>
+                        GV: Ngô Ngọc Anh<br>
+                        18:30 -> 20:20 
+                    </td>
+                    <td class="trong"></td>
+                    <td class="trong"></td>
+                    <td class="gio">18:30</td>
+                </tr>
+                <!-- Tiết 13 -->
+                <tr>
+                    <td class="tiet">Tiết 13</td>
+                    <!-- Thứ 2 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 3 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 4 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 5 -->
+                    <td class="trong"></td>
+                    <!-- Thứ 7 -->
+                    <td class="trong"></td>
+                    <!-- CN -->
+                    <td class="trong"></td>
+                    <td class="gio">19:30</td>
+                </tr>
+                <!-- Hàng cuối -->
+                <tr>
+                    <th>-></th>
+                    <th>Thứ 2 (21/09)</th>
+                    <th>Thứ 3 (22/09)</th>
+                    <th>Thứ 4 (23/09)</th>
+                    <th>Thứ 5 (24/09)</th>
+                    <th>Thứ 6 (25/09)</th>
+                    <th>Thứ 7 (26/09)</th>
+                    <th>Chủ Nhật (27/09)</th>
+                    <th><-</th>
+                </tr>
+            </table>
+         </div>
+    </div>
+    
+</body>
+</html>
