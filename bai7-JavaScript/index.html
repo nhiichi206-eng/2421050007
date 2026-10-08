@@ -149,7 +149,7 @@
         document.writeln("<br>");
         document.writeln(mangSo.length);
 
-        //Gộp mảng concat
+        //Gộp mảng: concat
         var mang = mangSo.concat(mangTen, thongTin);
         document.writeln(mang);
         
@@ -203,9 +203,9 @@
         var c = "10";
         var d = "5.5";
         // && : Và  || : Hoặc
-        //True & True = True
-        //True & False = False
-        //False & False = False
+        //True && True = True
+        //True && False = False
+        //False && False = False
         document.writeln("<br>");
         document.writeln(soThuNhat > soThuHai) && (c < d);
 
@@ -265,7 +265,73 @@
             document.writeln("Điểm không hợp lệ");
         }
 
-        
+        //object: var name = {}
+        var thongTinSinhVien = {
+            hoTen: "Nguyen Thi Ngoc Nhi",
+            tuoi: 20,
+            gioiTinh: "False", //True: Nam / False: Nữ
+            diaChi: {
+                thanhPho: "Ha Noi",
+                phuong: "Dong Ngac",
+                duong: "Le Van Hien"
+            }
+        }
+
+        var thongTinPhim = {
+            theLoai: "Hoat hinh",
+            tenPhim: "Doraemon",
+            tacGia: "Fujiko F. Fujio",
+            nhanVat: {
+                nhanVatChinh: [
+                    "Doraemon", "Nobita", "Shizuka", "Suneo", "Jaian"
+                ],
+                nhanVatPhu: [
+                    "Dorami", "Dekisugi", "Tamako"
+                ]
+            },
+            namSangTac: 1969,  
+        }
+
+        document.writeln("<br>");
+        document.writeln(thongTinPhim.tacGia);
+        document.writeln("<br>");
+        document.writeln(thongTinPhim.nhanVat.nhanVatChinh[2]);
+
+        //switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+            case 6:
+                document.writeln("Super Saturday");
+                break;
+            case 0:
+                document.writeln("Sleep Sunday");
+                break;
+            default:
+                document.writeln("I'm looking forward to this weekend!");
+            }
+
+            //vòng lặp for
+            for (var index = 1; index <= 3; index++) {
+                document.writeln("<br> Xin chào! " + index);
+            }
+
+            var danhSachSinhVien = ["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+            document.writeln("<br> Xin chào!" + danhSachSinhVien[0]);
+            for (var i = 0; i < danhSachSinhVien.length; i++){
+                document.writeln("<br>" + i + "<br>");
+                document.writeln("Xin chào " + danhSachSinhVien[i]);
+            }
+            
+            var danhSachSinhVien = ["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+            for (var i = 0; i < danhSachSinhVien.length; i++){
+                if(danhSachSinhVien[i] == "Thuy" || danhSachSinhVien[i] == "Tuan"){
+                    document.writeln("Xin chào" + danhSachSinhVien[i] )
+                }
+            }
     </script>
 
     <!-- external JS -->
